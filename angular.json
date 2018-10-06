@@ -123,5 +123,10 @@
       }
     }
   },
-  "defaultProject": "angular-demo-app"
+  "defaultProject": "angular-demo-app",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }

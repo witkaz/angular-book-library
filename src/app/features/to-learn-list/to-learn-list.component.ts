@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Item } from './item';
 import { ToLearnService } from './../../services/to-learn.service';
 
@@ -6,10 +6,14 @@ import { ToLearnService } from './../../services/to-learn.service';
   selector: 'app-to-learn-list',
   templateUrl: './to-learn-list.component.html',
 })
-export class ToLearnListComponent {
-  items: Item[];
+export class ToLearnListComponent implements OnInit {
+  public items: Item[];
 
-  constructor (toLearnService: ToLearnService) {
-    this.items = toLearnService.getItems();
+  constructor (private toLearnService: ToLearnService) {
+    this.toLearnService = toLearnService;
+  }
+
+  ngOnInit() {
+    this.items = this.toLearnService.getItems();
   }
 }

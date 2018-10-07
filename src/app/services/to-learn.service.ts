@@ -7,5 +7,5 @@ import { ITEMSTOLEARN } from './../features/to-learn-list/to-learn-list';
 })
 
 export class ToLearnService {
-  getItems() {return ITEMSTOLEARN; }
+  getItems() { return ITEMSTOLEARN; }
 }

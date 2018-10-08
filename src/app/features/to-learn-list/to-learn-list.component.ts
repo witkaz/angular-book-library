@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Item } from './item';
-import { ToLearnService } from './../../services/to-learn.service';
+import { ToLearnService } from '../../core/services/to-learn.service';
 
 @Component({
   selector: 'app-to-learn-list',

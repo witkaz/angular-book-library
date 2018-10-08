@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { ITEMSTOLEARN } from './../features/to-learn-list/to-learn-list';
+import { ITEMSTOLEARN } from '../../features/to-learn-list/to-learn-list';
 
 
 @Injectable({

@@ -9,11 +9,13 @@ import { ToLearnService } from '../../core/services/to-learn.service';
 export class ToLearnListComponent implements OnInit {
   public items: Item[];
 
-  constructor (private toLearnService: ToLearnService) {
-    this.toLearnService = toLearnService;
+  constructor (private toLearnService: ToLearnService) {}
+
+  private getItems(): void {
+    this.items = this.toLearnService.getItems();
   }
 
   ngOnInit() {
-    this.items = this.toLearnService.getItems();
+   this.getItems();
   }
 }

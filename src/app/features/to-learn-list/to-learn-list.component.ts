@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Item } from './item';
-import { ToLearnService } from './../../services/to-learn.service';
+import { ToLearnService } from '../../core/services/to-learn.service';
 
 @Component({
   selector: 'app-to-learn-list',
@@ -9,11 +9,13 @@ import { ToLearnService } from './../../services/to-learn.service';
 export class ToLearnListComponent implements OnInit {
   public items: Item[];
 
-  constructor (private toLearnService: ToLearnService) {
-    this.toLearnService = toLearnService;
+  constructor (private toLearnService: ToLearnService) {}
+
+  private getItems(): void {
+    this.items = this.toLearnService.getItems();
   }
 
   ngOnInit() {
-    this.items = this.toLearnService.getItems();
+   this.getItems();
   }
 }

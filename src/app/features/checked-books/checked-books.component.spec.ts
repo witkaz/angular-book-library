@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ToLearnListComponent } from './to-learn-list.component';
+import { CheckedBooksComponent } from './checked-books.component';
 
-describe('ToLearnListComponent', () => {
-  let component: ToLearnListComponent;
-  let fixture: ComponentFixture<ToLearnListComponent>;
+describe('CheckedBooksComponent', () => {
+  let component: CheckedBooksComponent;
+  let fixture: ComponentFixture<CheckedBooksComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ToLearnListComponent ]
+      declarations: [ CheckedBooksComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ToLearnListComponent);
+    fixture = TestBed.createComponent(CheckedBooksComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

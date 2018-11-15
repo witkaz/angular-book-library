@@ -1,3 +1,43 @@
-<p>
-  books-detail works!
-</p>
+<div class="row">
+  <div class="col-xs-12">
+    <img
+      [src]="book.imagePath"
+      alt="{{ book.name }}"
+      class="img-responsive"
+      style="max-height: 300px">
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <h1>{{ book.name }}</h1>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <div class="btn-group" appDropdown>
+      <button type="button" class="btn btn-primary dropdown-toggle">
+        Manage Book <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a style="cursor: pointer;" (click)="onAddToCheckedBooks()" style="cursor: pointer;">To Checked Books List</a></li>
+        <!-- <li><a style="cursor: pointer;" (click)="onEditBook()">Edit Book</a></li> -->
+        <li><a style="cursor: pointer;">Delete Book</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    {{ book.description }}
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <ul class="list-group">
+      <li class="list-group-item"
+        *ngFor="let bookSpec of recipe.ingredients">
+        {{ book.name }} - {{ book.isbnNumber }}
+      </li>
+    </ul>
+  </div>
+</div>

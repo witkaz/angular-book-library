@@ -12,4 +12,5 @@ export class Book {
         this.imagePath = imagePath;
         this.bookSpecification = bookSpecification;
     }
+
 }

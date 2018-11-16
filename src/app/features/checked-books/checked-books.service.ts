@@ -9,7 +9,7 @@ export class CheckedBooksService {
     new BookSpecification('Big Literature', 10222)
   ];
 
-  getIngredients() {
+  getbooksSpecifications() {
     return this.booksSpecifications.slice();
   }
 

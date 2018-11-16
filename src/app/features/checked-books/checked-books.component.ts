@@ -16,7 +16,7 @@ export class CheckedBooksComponent implements OnInit, OnDestroy {
   constructor(private checkedBooksService: CheckedBooksService) { }
 
   ngOnInit() {
-    this.bookSpecs = this.checkedBooksService.getIngredients();
+    this.bookSpecs = this.checkedBooksService.getbooksSpecifications();
     this.subscription = this.checkedBooksService.booksSpecChanged
       .subscribe(
         (ingredients: BookSpecification[]) => {

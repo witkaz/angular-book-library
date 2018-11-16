@@ -30,7 +30,7 @@ export class BooksDetailComponent implements OnInit {
     this.bookService.addBookSpecificationToCheckedBooks(this.book.bookSpecification);
   }
 
-  onEditRecipe() {
+  onEditBook() {
     this.router.navigate(['edit'], {relativeTo: this.route});
   }
 

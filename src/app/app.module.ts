@@ -11,6 +11,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { CheckedBooksComponent } from './features/checked-books/checked-books.component';
 import { CheckedBooksEditComponent } from './features/checked-books/checked-books-edit/checked-books-edit.component';
 import { BooksEditComponent } from './features/books/books-edit/books-edit.component';
+import { CheckedBooksService } from './features/checked-books/checked-books.service';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,7 @@ import { BooksEditComponent } from './features/books/books-edit/books-edit.compo
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [CheckedBooksService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

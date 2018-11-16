@@ -1,5 +1,11 @@
 <div class="row">
   <div class="col-xs-12">
+    <button class="btn btn-success" (click)="onNewBook()">Add new book</button>
+  </div>
+</div>
+<hr>
+<div class="row">
+  <div class="col-xs-12">
     <app-book-item
     *ngFor="let bookEl of books; let i = index"
     [book]="bookEl"

@@ -10,7 +10,6 @@ import { BookSpecification } from './../../shared/book-specification.model';
   styleUrls: ['./checked-books.component.scss']
 })
 export class CheckedBooksComponent implements OnInit, OnDestroy {
-
   bookSpecs: BookSpecification[];
   private subscription: Subscription;
 

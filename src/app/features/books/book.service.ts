@@ -1,6 +1,10 @@
+import { Injectable } from '@angular/core';
 import { Book } from './book.model';
 import { BookSpecification } from 'src/app/shared/book-specification.model';
 import { CheckedBooksService } from '../checked-books/checked-books.service';
+
+
+@Injectable()
 
 export class BookService {
     private books: Book[] = [
@@ -25,7 +29,7 @@ export class BookService {
     }
 
     addBookSpecificationToCheckedBooks(bookSpecification: BookSpecification[]) {
-      this.checkedbooksService.addManyBookSpec(bookSpecification);
+      this.checkedbooksService.addManyBookSpecs(bookSpecification);
     }
 }
 

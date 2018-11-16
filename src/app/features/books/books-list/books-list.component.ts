@@ -18,4 +18,8 @@ export class BooksListComponent implements OnInit {
   ngOnInit() {
     this.books = this.bookService.getBooks();
   }
+
+  onNewBook() {
+    this.router.navigate(['new'], {relativeTo: this.route});
+  }
 }

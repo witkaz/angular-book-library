@@ -12,6 +12,7 @@ import { CheckedBooksComponent } from './features/checked-books/checked-books.co
 import { CheckedBooksEditComponent } from './features/checked-books/checked-books-edit/checked-books-edit.component';
 import { BooksEditComponent } from './features/books/books-edit/books-edit.component';
 import { CheckedBooksService } from './features/checked-books/checked-books.service';
+import { DropdownDirective } from './shared/dropdown.directive';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { CheckedBooksService } from './features/checked-books/checked-books.serv
     BooksStartComponent,
     CheckedBooksComponent,
     CheckedBooksEditComponent,
-    BooksEditComponent
+    BooksEditComponent,
+    DropdownDirective
   ],
   imports: [
     BrowserModule,

@@ -1,6 +1,5 @@
 import { Subject } from 'rxjs';
 import { BookSpecification } from '../../shared/book-specification.model';
-import { Book } from '../books/book.model';
 
 export class CheckedBooksService {
   booksSpecChanged = new Subject<BookSpecification[]>();
@@ -19,10 +18,7 @@ export class CheckedBooksService {
     this.booksSpecChanged.next(this.booksSpecifications.slice());
   }
 
-  addManyBookSpec(booksSpecifications: BookSpecification[]) {
-    // for (let ingredient of ingredients) {
-    //   this.addIngredient(ingredient);
-    // }
+  addManyBookSpecs(booksSpecifications: BookSpecification[]) {
     this.booksSpecifications.push(...booksSpecifications);
     this.booksSpecChanged.next(this.booksSpecifications.slice());
   }

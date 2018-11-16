@@ -1,5 +1,4 @@
 import { BookSpecification } from 'src/app/shared/book-specification.model';
-import { Book } from './../../books/book.model';
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { CheckedBooksService } from './../checked-books.service';
 

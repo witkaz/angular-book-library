@@ -15,6 +15,9 @@ export class BookService {
         // tslint:disable-next-line:max-line-length
         new Book('Book Second Example', 'The best book second example description', 'https://www.ng-book.com/images/ng2/covers/any/ng-book-cover-ngb-ng-550.png', [
             new BookSpecification('Publishing House Example', 5656565656),
+        ]),
+        new Book('Book Third Example', 'The best book third example description', 'https://www.ng-book.com/images/ng2/covers/any/ng-book-cover-ngb-ng-550.png', [
+            new BookSpecification('Publishing House Example Third', 5656565656),
         ])
     ];
 

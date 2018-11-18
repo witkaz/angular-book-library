@@ -14,7 +14,7 @@ export class BooksDetailComponent implements OnInit {
 
   constructor(private bookService: BookService,
               private route: ActivatedRoute,
-              private  router: Router) { }
+              private router: Router) { }
 
   ngOnInit() {
     this.route.params

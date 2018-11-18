@@ -35,8 +35,8 @@
   <div class="col-xs-12">
     <ul class="list-group">
       <li class="list-group-item"
-        *ngFor="let bookSpec of book.bookSpecs">
-        {{ book.name }} - {{ book.isbnNumber }}
+        *ngFor="let bookSpec of book.bookSpecification">
+        {{ bookSpec.publishingHouse }} - {{ bookSpec.isbnNumber }}
       </li>
     </ul>
   </div>

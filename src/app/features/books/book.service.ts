@@ -13,10 +13,11 @@ export class BookService {
             new BookSpecification('Publishing House Example', 123123123),
         ]),
         // tslint:disable-next-line:max-line-length
-        new Book('Book Second Example', 'The best book second example description', 'https://www.ng-book.com/images/ng2/covers/any/ng-book-cover-ngb-ng-550.png', [
-            new BookSpecification('Publishing House Example', 5656565656),
+        new Book('Book Second Example', 'The best book second example description', 'https://ecsmedia.pl/c/polska-odwraca-oczy-w-iext43264597.jpg', [
+            new BookSpecification('Publishing House Second Example', 78787878),
         ]),
-        new Book('Book Third Example', 'The best book third example description', 'https://www.ng-book.com/images/ng2/covers/any/ng-book-cover-ngb-ng-550.png', [
+        // tslint:disable-next-line:max-line-length
+        new Book('Book Third Example', 'The best book third example description', 'https://images-na.ssl-images-amazon.com/images/I/41V1YAzDcGL._SX326_BO1,204,203,200_.jpg', [
             new BookSpecification('Publishing House Example Third', 5656565656),
         ])
     ];

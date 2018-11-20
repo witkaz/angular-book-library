@@ -13,7 +13,7 @@ const modules = [
   SharedModule,
   CheckedBooksModule,
   CoreModule
-]
+];
 
 @NgModule({
   declarations: [

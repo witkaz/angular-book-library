@@ -25,6 +25,10 @@ export class CheckedBooksComponent implements OnInit, OnDestroy {
       );
     }
 
+    onEditItem(index: number) {
+      this.checkedBooksService.startedEditing.next(index);
+    }
+
     ngOnDestroy() {
       this.subscription.unsubscribe();
     }

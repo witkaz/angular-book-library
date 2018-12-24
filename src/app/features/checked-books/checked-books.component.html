@@ -6,7 +6,8 @@
       <a
         class="list-group-item"
         style="cursor: pointer"
-        *ngFor="let bookSpec of bookSpecs"
+        *ngFor="let bookSpec of bookSpecs; let i = index"
+        (click)="onEditItem(i)"
         >{{ bookSpec.publishingHouse }} {{ bookSpec.isbnNumber }}</a>
     </ul>
   </div>

@@ -6,13 +6,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { CheckedBooksModule } from './features/checked-books/checked-books.module';
 import { SharedModule } from './shared/share.module';
 import { CoreModule } from './core/core.module';
+import { FormsModule } from '@angular/forms';
 
 const modules = [
   BrowserModule,
   AppRoutingModule,
   SharedModule,
   CheckedBooksModule,
-  CoreModule
+  CoreModule,
+  FormsModule
 ];
 
 @NgModule({

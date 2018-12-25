@@ -9,13 +9,16 @@ import { BooksStartComponent } from './books-start/books-start.component';
 import { BooksListComponent } from './books-list/books-list.component';
 import { BooksEditComponent } from './books-edit/books-edit.component';
 import { BooksRoutingModule } from './books-routing.module';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 
 @NgModule({
     imports: [
         CommonModule,
         BooksRoutingModule,
-        SharedModule
+        SharedModule,
+        ReactiveFormsModule,
+        FormsModule
     ],
     declarations: [
         BooksComponent,
